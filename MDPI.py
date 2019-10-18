@@ -35,6 +35,7 @@ for i in range(19411):
     for dat in data:
         
         if str(dat)[0:21] == '<a class="title-link"':
+            
             articles.append(dat)
     
     for art in articles:
@@ -43,7 +44,7 @@ for i in range(19411):
         c2 = str(art)[c1+6:].find('"')
         links.append('https://www.mdpi.com' + str(art)[c1+6:c1+6+c2])
         
-with open('C:/Users/User/Documents/Data/MDPI/links.txt', 'w') as file:
+with open('C:/Users/User/Documents/Data/MDPI/links.txt', 'a') as file:
     
     for link in links:
         
