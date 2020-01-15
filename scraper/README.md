@@ -1,10 +1,6 @@
-## NOTE:
-
-These have been updated to scrape 2019 data but are currently running (this will take some time). Some further changes are expected to be made, at the very least the dictionary 'reference' in *MDPI_interaction_matrix.py* will need to be updated to account for oddities in the 2019 data.
-
 ## MDPI Scraper
 
-This project scrapes bibliographic data for publications in MPDI journals and creates a data set containing data on international collaborations at the national level. Data can be found in data directory. 
+This project scrapes bibliographic data for publications in MPDI journals and creates a data set containing data on international collaborations at the national level. Data for publications through the end of 2019 are available and can be found in data directory. 
 
 ### Using these scripts:
 
