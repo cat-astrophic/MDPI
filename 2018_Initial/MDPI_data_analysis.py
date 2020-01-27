@@ -22,13 +22,13 @@ def KS_test(C1,C2,a):
 
     D = 0
     
-    for x in range(25):
+    for x in range(len(C1)):
         
         if abs(C1[x] - C2[x]) > D:
             
             D = abs(C1[x] - C2[x])
 
-    val = np.sqrt(-.5 * np.log(a)) * np.sqrt((1/25) + (1/25))
+    val = np.sqrt(-.5 * np.log(a)) * np.sqrt((1/len(C1)) + (1/len(C1)))
     
     if D > val:
         
@@ -64,15 +64,43 @@ for yr in range(2014,2019):
     CDF_lower_mid = [edf(temp_lower_mid,i) for i in range(1,26)]
     CDF_low = [edf(temp_low,i) for i in range(1,26)]
     
+    CDF_high_robust = [edf(temp_high,i) for i in range(1,21)] # 21 because this is the robustness check removing papers w/ >20 nations 
+    CDF_upper_mid_robust = [edf(temp_upper_mid,i) for i in range(1,21)]
+    CDF_lower_mid_robust = [edf(temp_lower_mid,i) for i in range(1,21)]
+    CDF_low_robust = [edf(temp_low,i) for i in range(1,21)]
+    
     # (1.3.2) Do pairwise Kolmorogorov-Smirnov tests
     
     A = [CDF_high, CDF_high, CDF_high, CDF_upper_mid, CDF_upper_mid, CDF_lower_mid]
     B = [CDF_upper_mid, CDF_lower_mid, CDF_low, CDF_lower_mid, CDF_low, CDF_low]
     
+    A_robust = [CDF_high_robust, CDF_high_robust, CDF_high_robust, CDF_upper_mid_robust, CDF_upper_mid_robust, CDF_lower_mid_robust]
+    B_robust = [CDF_upper_mid_robust, CDF_lower_mid_robust, CDF_low_robust, CDF_lower_mid_robust, CDF_low_robust, CDF_low_robust]
+
+    A2 = ['CDF_high', 'CDF_high', 'CDF_high', 'CDF_upper_mid', 'CDF_upper_mid', 'CDF_lower_mid']
+    B2 = ['CDF_upper_mid', 'CDF_lower_mid', 'CDF_low', 'CDF_lower_mid', 'CDF_low', 'CDF_low']
+    
     for i in range(len(A)):
         
         result = KS_test(A[i],B[i],.05)
+        result_robust_05 = KS_test(A_robust[i],B_robust[i],.05)
+        result_robust_10 = KS_test(A_robust[i],B_robust[i],.1)
         print(result)
+        
+        for x in [result_robust_05,result_robust_10]:
+        
+            if result[0:50] == x[0:50]:
+            
+                continue
+        
+            else:
+                
+                print('Year == ' + str(yr) + ': ' + ['5','10'][[result_robust_05,result_robust_10].index(x)] + '% significance level')
+                print(A2[i])
+                print(result)
+                print(B2[i])
+                print(x)
+                print('The results are NOT robust.')
 
 # (1.4) Creating a heatmap of the results
 
