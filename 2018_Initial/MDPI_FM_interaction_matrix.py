@@ -1,4 +1,4 @@
-# This script creates an interaction matrix for collaborating nations using the MDPI data
+# This script creates an interaction matrix for collaborating nations using the FM-classified MDPI data
 
 # To do this, quite a bit of cleaning has to occur first
 
