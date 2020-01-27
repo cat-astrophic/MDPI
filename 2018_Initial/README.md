@@ -16,7 +16,7 @@ The scripts should be run in the following order:
 8. MDPI_panel_data.py -- this creates a panel data set with bibliographic and some socioeconomic data
 9. MDPI_data_analysis.py -- this perfroms initial data analysis for the project including Kolmogorov-Smirnov tests
 10. MDPI_regional_maps.py -- this creates plots of the income group and continent of the top collaborator by nation
-11. MDPI_FM_prep.py -- this creates the annualized files from (3) (plus a comprehensive file) replcaing journal with Frascati Manual classification
+11. MDPI_FM_prep.py -- this creates the annualized files from (3) (plus a comprehensive file) replacing journal with Frascati Manual classification and with each classification being saved to a unique output file
 
 ### Data files:
 
