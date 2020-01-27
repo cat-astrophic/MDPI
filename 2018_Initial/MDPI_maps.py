@@ -7,6 +7,7 @@ import pandas as pd
 import geopandas as gpd
 import networkx as nx
 import matplotlib.pyplot as plt
+cm = plt.get_cmap('tab20')
 
 # Reading in the data
 
@@ -57,7 +58,7 @@ rwidths = [rdata.values[i][j] for i in range(6) for j in range(i,6)]
 rwidths = [15 * width / max(rwidths) for width in rwidths]
 rg = nx.MultiGraph([(i,j) for i in range(6) for j in range(i,6)])
 rpos = [[25,-10], [100,40], [15,65], [-100,40], [135,-24], [-55,-20]]
-nx.draw(rg, rpos, node_size = 1000 * rnodes['all'] / max(rnodes['all']), width = rwidths)
+nx.draw(rg, rpos, node_size = 1000 * rnodes['all'] / max(rnodes['all']), width = rwidths, node_color = cm(2/3))
 plt.title('Transcontinental Collaborations', loc = 'center', fontsize = 20, color = 'black')
 plt.savefig('C:/Users/User/Documents/Data/MDPI/map_regions.eps')
 plt.show()
