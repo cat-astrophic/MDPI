@@ -12,7 +12,6 @@ data_high = pd.read_csv('C:/Users/User/Documents/Data/MDPI/summary_table_high_in
 data_upper_mid = pd.read_csv('C:/Users/User/Documents/Data/MDPI/summary_table_upper_mid_income.csv')
 data_lower_mid = pd.read_csv('C:/Users/User/Documents/Data/MDPI/summary_table_lower_mid_income.csv')
 data_low = pd.read_csv('C:/Users/User/Documents/Data/MDPI/summary_table_low_income.csv')
-totals = pd.read_csv('C:/Users/User/Documents/Data/MDPI/totals_by_year_by_classification.csv')
 
 # (1) Testing to see if the distributions by income group are pairwise similar
 
