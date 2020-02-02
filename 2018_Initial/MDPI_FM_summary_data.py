@@ -74,7 +74,7 @@ def subsetter(Collaborators, group):
 
 # Initializing WDI classification DataFrames
 
-sum_tab_all = pd.DataFrame(columns = ['Year', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13',
+sum_tab_all = pd.DataFrame(columns = ['Category', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13',
                                       '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25'])
 sum_tab_high = pd.DataFrame(columns = sum_tab_all.columns)
 sum_tab_upper_mid = pd.DataFrame(columns = sum_tab_all.columns)
