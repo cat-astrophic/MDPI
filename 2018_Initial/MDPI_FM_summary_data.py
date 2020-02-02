@@ -21,7 +21,7 @@ def histogram_maker(rep, Cols, group):
         plt.xticks(range(1,max(max(num_collabs)+1,6)))
         locs, labels = plt.yticks()
         plt.yticks([int(round(loc)) for loc in locs])
-        plt.title('Collaboration Histogram for ' + group + ' - ' + rep + '\n')
+        plt.title('Collaboration Histogram for ' + group + ' - ' + str(rep[-1]) + '\n')
         plt.xlabel('Number of Collaborating Nations')
         plt.ylabel('Frequency')
         plt.savefig('C:/Users/User/Documents/Data/MDPI/FM_histogram_' + group + '_' + rep + '.eps', bbox_inches = 'tight')        
@@ -71,22 +71,6 @@ def subsetter(Collaborators, group):
                 break
     
     return output
-
-# A function to create stacked histograms by classification or region
-
-def group_bars(data, labels, x_string, y_string, rep):
-    
-    plt.close()
-    x_pos = [i for i, _ in enumerate(labels)]
-    plt.bar(x_pos, data, color = 'green')
-    plt.xlabel(x_string)
-    plt.ylabel(y_string)
-    plt.title('Frequency by ' + x_string + ' in ' + rep + '\n')
-    plt.xticks(x_pos, labels)
-    locs, labels = plt.yticks()
-    plt.yticks([int(round(loc)) for loc in locs])
-    plt.savefig('C:/Users/User/Documents/Data/MDPI/FM_bar_chart_' + x_string + '_' + rep + '.eps', bbox_inches='tight')
-    plt.show()
 
 # Initializing WDI classification DataFrames
 
