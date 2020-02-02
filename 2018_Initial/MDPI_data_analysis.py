@@ -195,7 +195,7 @@ output.append(sum(output))
 papers = [137786,24403,54412,2573,190186]
 per_cap = [papers[i]/output[i] for i in range(len(output))]
 
-# Time series trebds for one nation only papers by income group
+# Time series trends for one nation only papers by income group
 
 cm = plt.get_cmap('gist_rainbow')
 xlabs = [2000 + 2*i for i in range(10)]
