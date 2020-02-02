@@ -163,9 +163,9 @@ for rep in repetitions:
         
 # Write all finalized DataFrames to csv
 
-sum_tab_all.to_csv('C:/Users/User/Documents/Data/MDPI/2018_Initial/FM_summary_table_all.csv', index = False)
-sum_tab_high.to_csv('C:/Users/User/Documents/Data/MDPI/2018_Initial/FM_summary_table_high_income.csv', index = False)
-sum_tab_upper_mid.to_csv('C:/Users/User/Documents/Data/MDPI/2018_Initial/FM_summary_table_upper_mid_income.csv', index = False)
-sum_tab_lower_mid.to_csv('C:/Users/User/Documents/Data/MDPI/2018_Initial/FM_summary_table_lower_mid_income.csv', index = False)
-sum_tab_low.to_csv('C:/Users/User/Documents/Data/MDPI/2018_Initial/FM_summary_table_low_income.csv', index = False)
+sum_tab_all.to_csv('C:/Users/User/Documents/Data/MDPI/FM_summary_table_all.csv', index = False)
+sum_tab_high.to_csv('C:/Users/User/Documents/Data/MDPI/FM_summary_table_high_income.csv', index = False)
+sum_tab_upper_mid.to_csv('C:/Users/User/Documents/Data/MDPI/FM_summary_table_upper_mid_income.csv', index = False)
+sum_tab_lower_mid.to_csv('C:/Users/User/Documents/Data/MDPI/FM_summary_table_lower_mid_income.csv', index = False)
+sum_tab_low.to_csv('C:/Users/User/Documents/Data/MDPI/FM_summary_table_low_income.csv', index = False)
 
