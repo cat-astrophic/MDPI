@@ -196,6 +196,11 @@ def main(rep):
     # Make a list of unique countries collaborating on each paper
     
     Collaborators = [list(set(country)) for country in Countries]
+    blank_collab_ids = [i for i in range(len(Collaborators)) if Collaborators[i] == []]
+    
+    for blank_id in [blank_collab_ids[len(blank_collab_ids)-i-1] for i in range(len(blank_collab_ids))]:
+        
+        Collaborators.pop(blank_id)
     
     # Create interaction matrix
     
@@ -207,7 +212,7 @@ def main(rep):
     
     M = np.zeros((len(reftab),len(reftab)))
     
-    # Third, complete the matrix
+    # Third, complete the matrix and remove blank collaboration rows
     
     for collaboration in Collaborators:
         
@@ -221,10 +226,6 @@ def main(rep):
                     id2 = reftab.index(collaboration[j])
                     M[id1,id2] += 1
                     M[id2,id1] += 1
-
-        if len(collaboration) == 0:
-            
-            Collaborators.pop(Collaborators.index(collaboration))
     
     # Save the interaction matrix and Collaborators list as csv files
     
@@ -240,4 +241,3 @@ for rep in repetitions:
 
     main(rep)
 
-    
