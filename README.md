@@ -10,6 +10,9 @@ In order to successfully use the scraper the following modules are required:
 * **bs4** for webscraping
 * **pandas** for data management and analysis
 * **numpy** for data management and analysis
+
+In addition to those modules, the remainder of the scripts used in various analyses of the data require the following modules:
+
 * **matplotlib** for general plotting
 * **networkx** for plotting networks
 * **geopandas** for plotting on maps
