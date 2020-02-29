@@ -41,9 +41,9 @@ Cary, Michael and Taylor Rockwell. "International Collaboration in Open Access P
 },\
 &nbsp;&nbsp;&nbsp;&nbsp;author={Cary, Michael and Rockwell, Taylor},\
 &nbsp;&nbsp;&nbsp;&nbsp;journal={Publications},\
-&nbsp;&nbsp;&nbsp;&nbsp;volume={8},
+&nbsp;&nbsp;&nbsp;&nbsp;volume={8},\
 &nbsp;&nbsp;&nbsp;&nbsp;number={1},\
-\&nbsp;&nbsp;&nbsp;&nbsp;pages={13},\
+&nbsp;&nbsp;&nbsp;&nbsp;pages={13},\
 &nbsp;&nbsp;&nbsp;&nbsp;year={2020},\
 &nbsp;&nbsp;&nbsp;&nbsp;publisher={MDPI}\
 }
