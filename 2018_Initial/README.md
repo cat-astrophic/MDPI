@@ -1,8 +1,8 @@
 ## MDPI 2018 Initial
 
-This project scrapes bibliographic data for publications in MPDI journals and performs various analyses that can be found in the paper "International Collaboration in Open Access Publications: How Income Shapes International Collaboration" which is currently under review at *Publications*.
+This project scrapes bibliographic data for publications in MPDI journals and performs various analyses that can be found in the paper "International Collaboration in Open Access Publications: How Income Shapes International Collaboration" which has been accepted for publication at *Publications*.
 
-### Using these scripts:
+## Using these scripts:
 
 The scripts should be run in the following order:
 
@@ -20,6 +20,30 @@ The scripts should be run in the following order:
 12. MDPI_FM_interaction_matrix.py -- this creates year/Frascati Manual classification pair versions of the outputs from (4)
 13. MDPI_FM_data_analysis.py -- this does Kolmogorov-Smirnov tests and creates heatmaps for the FM categorical data
 
-### Data files:
+## Data files:
 
 The files containing the scraped MDPI data are presented here and can be used in lieu of running the .py files. This includes the cleaned Scimago data. Additional data from the World Bank WDI data set which is used is included here as well.
+
+## Citation
+
+### APA
+
+Cary, M., & Rockwell, T. (2020). International Collaboration in Open Access Publications: How Income Shapes International Collaboration. *Publications*, 8(1), 13.
+
+### MLA
+
+Cary, Michael and Taylor Rockwell. "International Collaboration in Open Access Publications: How Income Shapes International Collaboration." *Publications* 8.1 (2020): 13.
+
+### Bibtex
+
+@article{cary2020international,\
+&nbsp;&nbsp;&nbsp;&nbsp;title={International Collaboration in Open Access Publications: How Income Shapes International Collaboration
+},\
+&nbsp;&nbsp;&nbsp;&nbsp;author={Cary, Michael and Rockwell, Taylor},\
+&nbsp;&nbsp;&nbsp;&nbsp;journal={Publications},\
+&nbsp;&nbsp;&nbsp;&nbsp;volume={8},
+&nbsp;&nbsp;&nbsp;&nbsp;number={1},\
+\&nbsp;&nbsp;&nbsp;&nbsp;pages={13},\
+&nbsp;&nbsp;&nbsp;&nbsp;year={2020},\
+&nbsp;&nbsp;&nbsp;&nbsp;publisher={MDPI}\
+}
