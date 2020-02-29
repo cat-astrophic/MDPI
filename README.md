@@ -22,3 +22,28 @@ If any of these modules are not already installed, simply run the following line
 * **pip install module**
 
 If you are interested in collaborating on a project using any of this data or data collection tools, please reach out to me by [email](macary@mix.wvu.edu)
+
+## Citation
+
+### APA
+
+Cary, M., & Rockwell, T. (2020). International Collaboration in Open Access Publications: How Income Shapes International Collaboration. *Publications*, 8(1), 13.
+
+### MLA
+
+Cary, Michael and Taylor Rockwell. "International Collaboration in Open Access Publications: How Income Shapes International Collaboration." *Publications* 8.1 (2020): 13.
+
+### Bibtex
+
+@article{cary2020international,\
+&nbsp;&nbsp;&nbsp;&nbsp;title={International Collaboration in Open Access Publications: How Income Shapes International Collaboration
+},\
+&nbsp;&nbsp;&nbsp;&nbsp;author={Cary, Michael and Rockwell, Taylor},\
+&nbsp;&nbsp;&nbsp;&nbsp;journal={Publications},\
+&nbsp;&nbsp;&nbsp;&nbsp;volume={8},\
+&nbsp;&nbsp;&nbsp;&nbsp;number={1},\
+&nbsp;&nbsp;&nbsp;&nbsp;pages={13},\
+&nbsp;&nbsp;&nbsp;&nbsp;year={2020},\
+&nbsp;&nbsp;&nbsp;&nbsp;publisher={MDPI}\
+}
+
