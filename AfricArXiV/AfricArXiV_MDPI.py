@@ -85,13 +85,14 @@ def affiliation_finder(string):
 affiliations = []
 journals = []
 years = []
+titles = []
 
 for link in links:
     
     try:
         
         print('Retrieving data from link #' + str(links.index(link)+1) + ' of ' + str(len(links)))
-        page = urllib.request.Request(link[:len(link)-1], headers = {'User-Agent': 'Mozilla/5.0'})
+        page = urllib.request.Request(link, headers = {'User-Agent': 'Mozilla/5.0'})
         response = urllib.request.urlopen(page)
         soup = bs(response, 'html.parser')
         data = soup.find_all('div')
@@ -99,6 +100,9 @@ for link in links:
         bib_journals = []
         bib_years = []
         temp_affs = []
+        
+        t = soup.find_all('h1')
+        titles.append(str(t[0])[57:len(str(t[0]))-6])
 
         for dat in data:
 
@@ -146,6 +150,6 @@ for link in links:
 
 # Create dataframe of all results and save a copy
 
-MDPI_df = pd.DataFrame({'Year': years, 'Journal': journals, 'Affiliations': affiliations})
+MDPI_df = pd.DataFrame({'Year': years, 'Journal': journals, 'Title':titles, 'Affiliations': affiliations})
 MDPI_df.to_csv('C:/Users/User/Documents/Data/MDPI/MDPIpapers_all.csv', index = False, encoding = 'utf-8-sig')
 
