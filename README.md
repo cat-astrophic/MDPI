@@ -1,6 +1,6 @@
 ## MDPI
 
-### This project was featured on the cover of [Volume 8 Issue 1 of *Publications*](https://www.mdpi.com/2304-6775/8)
+### [This project was featured on the cover of Volume 8 Issue 1 of *Publications*](https://www.mdpi.com/2304-6775/8)
 
 This repo contains the beginning of a project which will pull bibliographic information from open access articles (from MDPI journals initially) to study topics related to international scholarly collaboration. For now the data set only contains data for Opean Access journals (MDPI).
 
